@@ -26,7 +26,7 @@
                 <div class="mt-3">
                     <div class="card">
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><strong>Author:</strong> {{ $post->author }}</li>
+                          <li class="list-group-item"><strong>Author:</strong> {{ $post->user->name }}</li>
                           <li class="list-group-item"><strong>Post Date:</strong> {{ $post->post_date }}</li>
                         </ul>
                     </div>
