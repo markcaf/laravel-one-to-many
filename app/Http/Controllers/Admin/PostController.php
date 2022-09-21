@@ -54,7 +54,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $sentData = $request->validate($this->validationRules);
-        $sentData['author'] = Auth::user()->name;
+        $sentData['user_id'] = Auth::id();
         date_default_timezone_set('Europe/Rome');
         $sentData['post_date'] = new DateTime();
         $post = new Post();
