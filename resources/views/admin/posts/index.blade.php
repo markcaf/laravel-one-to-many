@@ -30,7 +30,7 @@
                                     </a>
                                 </th>
                                 <td>
-                                    {{ $post->author }}
+                                    {{ $post->user->name }}
                                 </td>
                                 <td>
                                     <a href="{{route('admin.posts.show', $post->slug)}}">
