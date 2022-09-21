@@ -26,6 +26,10 @@ class PostController extends Controller
      */
     public function index()
     {
+        /** 
+         * Per recuperare i post dell'utente loggato
+         * $posts = Post::where('user_id', Auth::id())->get();
+        */
         $posts = Post::all();
         return view('admin.posts.index', compact('posts'));
     }
