@@ -14,4 +14,8 @@ class Post extends Model
         'post_date',
         'author',
     ];
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
 }
