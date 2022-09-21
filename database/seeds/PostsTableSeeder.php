@@ -17,7 +17,7 @@ class PostsTableSeeder extends Seeder
     {
         $users = User::all();
 
-        for ($i=0; $i < 50; $i++) { 
+        for ($i=0; $i < 100; $i++) { 
             $newPost = new Post();
             $newPost->user_id = $faker->randomElement($users)->id;
             $newPost->title = $faker->realText(35);
